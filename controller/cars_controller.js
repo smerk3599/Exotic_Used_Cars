@@ -42,4 +42,3 @@ cars.delete('/:id', (req, res) => {
 })
 
 module.exports = cars
-
