@@ -10,7 +10,7 @@ cars.get('/', (req, res) => {
 })
 cars.post('/', (req, res) => {
   Car.create(req.body, (error, createCar) => {
-    Car.find({}, (error, foundAnimals) => {
+    Car.find({}, (error, foundCars) => {
       res.json(foundCars)
     })
   })
