@@ -1,3 +1,5 @@
+console.log('Hello Steven');
+
 const express = require('express');
 const mongoose = require('mongoose');
 
