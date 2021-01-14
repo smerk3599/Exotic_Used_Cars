@@ -100,7 +100,7 @@ componentDidMount = () => {
                     <li>{car.model}</li>
                   </ul>
                   <img src={car.image} alt={car.name}/>
-                  <h3>{car.price}</h3>
+                  <h3>${car.price}</h3>
                   <footer>
                   <button className="myButton" value={car._id} onClick={this.deleteCar}>DELETE</button>
                     <details>
