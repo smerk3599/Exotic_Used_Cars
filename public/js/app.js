@@ -60,7 +60,7 @@ updateCar = (event) => {
 componentDidMount = () => {
   axios.get('/cars').then(response => {
     this.setState({
-      birds: response.data
+      cars: response.data
     })
   })
 }
