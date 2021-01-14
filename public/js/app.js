@@ -91,13 +91,13 @@ componentDidMount = () => {
           </div>
           <h2>List of Vehicles</h2>
           <div className="grid-container">
-          <ul>
+
             {this.state.cars.map((car) => {
               return(
                 <div className="grid-item" key={car._id}>
-                    <li>{car.year}</li>
-                    <li>{car.make}</li>
-                    <li>{car.model}</li>
+                    <h4>{car.year}</h4>
+                    <h4>{car.make} {car.model}</h4>
+
 
                   <img src={car.image} alt={car.name}/>
                   <h3>${car.price}</h3>
@@ -128,7 +128,7 @@ componentDidMount = () => {
                 </div>
               )
             })}
-            </ul>
+
           </div>
       </div>
     )
