@@ -95,9 +95,9 @@ componentDidMount = () => {
               return(
                 <div className="grid-item" key={car._id}>
                   <ul>
-                    <li>{this.year}</li>
-                    <li>{this.make}</li>
-                    <li>{this.model}</li>
+                    <li>{car.year}</li>
+                    <li>{car.make}</li>
+                    <li>{car.model}</li>
                   </ul>
                   <img src={car.image} alt={car.name}/>
                   <h3>{this.price}</h3>
@@ -134,4 +134,3 @@ componentDidMount = () => {
   }
 }
 ReactDOM.render(<App></App>, document.querySelector('main'))
-
