@@ -1,9 +1,9 @@
 class App extends React.Component {
   state = {
-    year: '',
+    year: 1913,
     make: '',
     model: '',
-    price: '',
+    price: 0,
     image: '',
     cars:[]
   }
