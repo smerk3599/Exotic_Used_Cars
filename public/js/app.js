@@ -89,7 +89,7 @@
               <label htmlFor="image">Image</label>
               <input type="text" id="image" onChange={this.handleChange}/>
               <br/>
-              <input className="myButton" type="submit" value="Create Animal"/>
+              <input className="myButton" type="submit" value="Create Car"/>
             </form>
           </div>
           <h2>List of Vehicles</h2>
