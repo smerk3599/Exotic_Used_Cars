@@ -1,4 +1,3 @@
-console.log('Hello Steven');
 
 const express = require('express');
 const mongoose = require('mongoose');
@@ -30,3 +29,9 @@ mongoose.connection.on('error', err =>
 mongoose.connection.on('connected', () =>
   console.log('mongo connected: ', MONGODB_URI)
 )
+
+mongoose.connection.on('disconnected', () => console.log('mongo disconnected'))
+
+app.listen(PORT, () => {
+  console.log('listening on port', PORT)
+})
