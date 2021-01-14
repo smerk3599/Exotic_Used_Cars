@@ -91,14 +91,14 @@ componentDidMount = () => {
           </div>
           <h2>List of Vehicles</h2>
           <div className="grid-container">
+          <ul>
             {this.state.cars.map((car) => {
               return(
                 <div className="grid-item" key={car._id}>
-                  <ul>
                     <li>{car.year}</li>
                     <li>{car.make}</li>
                     <li>{car.model}</li>
-                  </ul>
+
                   <img src={car.image} alt={car.name}/>
                   <h3>${car.price}</h3>
                   <footer>
@@ -110,16 +110,16 @@ componentDidMount = () => {
                         <input type="text" id="year" onChange={this.handleChange}/>
                         <br/>
                         <label htmlFor="make">Make</label>
-                        <input type="text" id="year" onChange={this.handleChange}/>
+                        <input type="text" id="make" onChange={this.handleChange}/>
                         <br/>
                         <label htmlFor="model">Model</label>
-                        <input type="text" id="year" onChange={this.handleChange}/>
+                        <input type="text" id="model" onChange={this.handleChange}/>
                         <br/>
                         <label htmlFor="price">Price</label>
-                        <input type="text" id="year" onChange={this.handleChange}/>
+                        <input type="text" id="price" onChange={this.handleChange}/>
                         <br/>
                         <label htmlFor="image">Image</label>
-                        <input type="text" id="year" onChange={this.handleChange}/>
+                        <input type="text" id="image" onChange={this.handleChange}/>
                         <br/>
                         <input className="myButton" type="submit" value="Update Car"/>
                       </form>
@@ -128,6 +128,7 @@ componentDidMount = () => {
                 </div>
               )
             })}
+            </ul>
           </div>
       </div>
     )
